@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,13 +15,18 @@ public class Main {
 //        System.out.println(days3 + " " + "Koshumcha session... ");
 //        Days days4 = Days.JEKSHEMBI;
 //        System.out.println(days4 + " " + "Es alabyz... ");
+        System.out.println("Bir kundu beriniz: ");
+        Scanner kundor = new Scanner(System.in);
+        String kundorInput = kundor.nextLine();
 
 
-    Days days = Days.DUISHOMBU;
-        switch (days) {
+
+        switch (Days.valueOf(kundorInput.toUpperCase())) {
             case DUISHOMBU -> System.out.println("Java teoria okuim...");
             case SHEISHEMBI -> System.out.println("Anglis tilin okuim... ");
+            case SHARSHEMBI -> System.out.println("Java ");
             case BEISHEMBI -> System.out.println("Soft Scills okuibuz... ");
+            case JUMA -> System.out.println("Java teoria...");
             case ISHEMBI -> System.out.println("Koshumcha session... ");
             case JEKSHEMBI -> System.out.println("Es alabyz... ");
         }
