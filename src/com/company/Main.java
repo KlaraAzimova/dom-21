@@ -15,11 +15,10 @@ public class Main {
 //        System.out.println(days3 + " " + "Koshumcha session... ");
 //        Days days4 = Days.JEKSHEMBI;
 //        System.out.println(days4 + " " + "Es alabyz... ");
+
         System.out.println("Bir kundu beriniz: ");
         Scanner kundor = new Scanner(System.in);
         String kundorInput = kundor.nextLine();
-
-
 
         switch (Days.valueOf(kundorInput.toUpperCase())) {
             case DUISHOMBU -> System.out.println("Java teoria okuim...");
@@ -37,6 +36,6 @@ public class Main {
 //        System.out.println("Java ");
 
 
-        }
     }
+}
 
